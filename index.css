@@ -2,12 +2,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
+}
     :root{
         --concreto: #E2DFD8;
-        --concreto escuro: #CBC7BE;
+        --concreto-escuro: #CBC7BE;
         --tinta: #0F1E3D;
-        --caixa dagua: #1F5FBF;
+        --caixa-dagua: #1F5FBF;
         --fita: #F3C623;
         --branco: #FFFFFF;
 
@@ -72,6 +72,72 @@
 
     .menu a.atual{
         border-bottom-color: var(--fita);
-
     }
-}
+
+    .cartazes{
+        margin-top: 16px;
+        display: flex;
+        gap: 16px;
+    }
+
+    .cartaz{
+        padding: 40px;
+    }
+
+    .cartaz-principal{
+        background-color: var(--caixa-dagua);
+        color: #E2DFD8;
+        flex: 2;
+    }
+
+    .cartaz-principal h1{
+        font-size: 132px;
+        max-width: 9ch;
+    }
+
+    .cartaz-lateral{
+        background-color: var(--fita);
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:32px;
+    }
+
+    .cartaz-lateral p{
+        font-size: 22px;
+        font-weight: 600;
+        line-height: 1.3;
+        align-items: flex-start;
+    }
+
+    .botao{
+        background-color: var(--tinta);
+        color: #E2DFD8;
+        font-weight: 700;
+        text-decoration: none;
+        padding:16px, 28px, 16px, 28px;
+        border: none;
+        font-family: var(--fonte-texto);
+        font-size: 17px;
+        cursor: pointer;
+    }
+
+    .botao:hover{
+        background-color: var(--caixa-dagua);
+    }
+
+    .secao{
+        margin-top: 96px;
+    }
+
+    .titulo-secao{
+        font-family: 64px;
+        margin-bottom: 32px;
+    }
+
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
