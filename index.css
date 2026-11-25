@@ -113,6 +113,7 @@ max-width: 9ch;
     font-size: 17px;
     cursor: pointer; 
 }
+
 .botao:hover{
     background: var(--caixa-dagua);
 }
@@ -120,7 +121,7 @@ max-width: 9ch;
     margin-top: 96px;
 }
 .titulo-secao{
-    font-family: 64px;
+    font-size: 64px;
     margin-bottom: 32px;
 }
 .cards{
